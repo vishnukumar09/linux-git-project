@@ -7,4 +7,5 @@ echo "Disk Usage:" | tee -a /var/log/sys_health.log
 df -h | tee -a /var/log/sys_health.log
 echo "Memory Usage:" | tee -a /var/log/sys_health.log
 free -h | tee -a /var/log/sys_health.log
-
+echo "CPU Usage:" | tee -a /var/log/sys_health.log
+top | tee -a /var/log/sys_health.log
